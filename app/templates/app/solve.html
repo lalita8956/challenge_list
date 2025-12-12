@@ -1,0 +1,9 @@
+<h2>Solve: {{ challenge.title }}</h2>
+<form method="post" hx-post="/{{ challenge.id }}/solve/" hx-target="#detail" hx-swap="innerHTML">
+
+    {% csrf_token %}
+    <label for="flag">Enter Flag:</label><br>
+    <input type="text" id="flag" name="flag" required><br><br>
+    <input type="submit" value="Submit Flag" >
+</form>
+

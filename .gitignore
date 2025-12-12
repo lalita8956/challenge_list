@@ -1,0 +1,32 @@
+# Python
+*.pyc
+__pycache__/
+*~
+*.log
+*.pot
+
+# Virtual environment
+.env
+venv/
+.venv/
+env/
+
+# SQLite database
+db.sqlite3
+
+# Media and static files (adjust as needed)
+media/
+static/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Testing and coverage
+.tox/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# macOS system files
+.DS_Store

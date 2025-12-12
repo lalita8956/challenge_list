@@ -1,0 +1,16 @@
+<h2>{{ challenge.title }}</h2>
+
+<p>{{ challenge.description }}</p>
+
+<p><b>Difficulty:</b> {{ challenge.difficulty }}</p>
+
+<hr>
+<br>
+<a 
+    hx-get="/{{ challenge.id }}/solve/"
+    hx-target="#detail"
+    hx-swap="innerHTML"
+    style="padding:10px; background:#007bff; color:white; border-radius:5px;"
+>
+    Solve Challenge
+</a>

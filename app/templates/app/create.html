@@ -1,0 +1,23 @@
+<form 
+    method="post"
+    hx-post="{% url 'challenge-create' %}" 
+    hx-target="#create-form" 
+    hx-swap="innerHTML"
+>
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button class="px-3 py-1 bg-green-600 text-white rounded" type="submit">
+        Save Challenge
+    </button>
+
+    <button 
+        class="px-3 py-1 bg-gray-500 text-white rounded"
+        hx-get=""
+        hx-target="#create-form"
+        hx-swap="innerHTML"
+        type="button"
+    >
+        Cancel
+    </button>
+</form>
